@@ -6,7 +6,7 @@
 
 ## 👤 About Me
 
-- 🚀 I’m on a journey to become a developer and cyber security analyst.
+- 🚀 I’m on a journey to become a ML developer and AI engineering .
 - 🧠 Fascinated by psychology — always exploring how minds and machines work!
 - 💻 Currently sharpening my skills in C++, Java, Node.js,MongoDB , python and machine learning.
 
