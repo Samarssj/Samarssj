@@ -1,22 +1,23 @@
 # Hi 👋, I’m Samar Singh (`Samarssj`)
 
-**Aspiring Developer & machine learning | Exploring Minds & Machines**
+**AI Developer & machine learning | Exploring Artificial Minds & Machines**
 
 ---
 
 ## 👤 About Me
 
-- 🚀 I’m on a journey to become a ML developer and AI engineering .
+- 🚀 I’m on a journey to become a successful and well established AI engineer/ML Developer.
 - 🧠 Fascinated by psychology — always exploring how minds and machines work!
-- 💻 Currently sharpening my skills in C++, Java, Node.js,MongoDB , python and machine learning.
+- 💻 Currently working with GCP, Dialogflow CX , VertexAI, Java, Node.js, MongoDB, python and machine learning.
 
 ---
 
 ## 🛠️ Skills & Tools
 
-- **Languages:** C++, Java,python 
-- **Database:** MongoDB
+- **Languages:** Java,python 
+- **Database:** MongoDB, Firestore
 - **Machine Learning:** Eager learner in automation , agentic AIs and how algo prediction works .
+- **Cloud and AI:** Prompt Engineering, Cloud Run, Docker & Kubernates, Webhooks, REST & FAST API .
 
 ---
 
