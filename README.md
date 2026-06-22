@@ -14,7 +14,7 @@
 
 ## 🛠️ Skills & Tools
 
-- **Languages:** Java,python 
+- **Languages:** Java, python, JavaScript 
 - **Database:** MongoDB, Firestore, VectorDB
 - **Machine Learning:** Eager learner in automation , agentic AIs and how algo prediction works .
 - **Cloud and AI:** Prompt Engineering, Cloud Run, Docker & Kubernates, Webhooks, GCP .
