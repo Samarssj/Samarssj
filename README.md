@@ -8,7 +8,7 @@
 
 - 🚀 I’m on a journey to become a successful and well established AI engineer/ML Developer.
 - 🧠 Fascinated by psychology — always exploring how minds and machines work!
-- 💻 Currently working with GCP, Dialogflow CX , VertexAI, Java, Node.js, MongoDB, python and machine learning.
+- 💻 Currently working at EXL services with GCP, Dialogflow CX , VertexAI, Java, Node.js, MongoDB, python and machine learning.
 
 ---
 
