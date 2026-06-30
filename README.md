@@ -1,4 +1,4 @@
-# Hi 👋, I’m Samar Singh (`Samarssj`)                 ## profile views
+# Hi 👋, I’m Samar Singh (`Samarssj`)                 
 ![Profile Views](https://komarev.com/ghpvc/?username=Samarssj&color=brightgreen)                                        
 
 **AI Developer & machine learning | Exploring Artificial Minds & Machines**
