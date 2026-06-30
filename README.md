@@ -37,9 +37,6 @@
 
 ---
 
-## profile views
-![Profile Views](https://komarev.com/ghpvc/?username=Samarssj&color=brightgreen)
-
 ## 🧩 Fun Fact
 
 > “The intersection of psychology and technology is where I believe the most exciting innovations happens .
