@@ -9,16 +9,16 @@
 
 - 🚀 I’m on a journey to become a successful and well established AI engineer/ML Developer.
 - 🧠 Fascinated by psychology — always exploring how minds and machines work!
-- 💻 Currently working at EXL services with GCP, Dialogflow CX , VertexAI, Java, Node.js, MongoDB, python and machine learning.
+- 💻 Currently working at EXL services with GCP, CX Agent Studio, Dialogflow CX , VertexAI, Java, Node.js, MongoDB, python and machine learning.
 
 ---
 
 ## 🛠️ Skills & Tools
 
 - **Languages:** Java, python, JavaScript 
-- **Database:** MongoDB, Firestore, VectorDB
+- **Database:** MongoDB, Firestore, VectorDB, SQLite
 - **Machine Learning:** Eager learner in automation , agentic AIs and how algo prediction works .
-- **Cloud and AI:** Prompt Engineering, Cloud Run, Docker & Kubernates, Webhooks, GCP .
+- **Cloud and AI:** Prompt Engineering, Cloud Run, Docker & Kubernates, Webhooks, GCP, NLP .
 - **ML:** Feature Engineering, Pandas, Numpy, Matplotlib, ML Algorithms .
 - **Tools:** CI/CD, ADK, Jupyter NoteBook, REST & FAST API .
 
