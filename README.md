@@ -119,7 +119,7 @@ At **EXL Services**, I work with technologies including **GCP, CX Agent Studio, 
 
 <br />
 
-**Always open to learning, collaborating, and building meaningful AI-powered solutions.**
+**Always open to learning, collaborating, and building meaningful AI-powered solutions**
 
 </div>
 
