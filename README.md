@@ -8,17 +8,28 @@
 
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=700&lines=AI+Developer;Machine+Learning+Enthusiast;Building+Intelligent+Systems" alt="Animated profile tagline" />
 
-<a href="https://samar-portfolio1.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-Visit%20my%20portfolio-6C63FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-</a>
-<a href="https://www.linkedin.com/in/samar-singh-3a4560289" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://github.com/Samarssj" target="_blank">
-  <img src="https://img.shields.io/github/followers/Samarssj?label=Follow&style=for-the-badge&logo=github&logoColor=white&color=181717" alt="GitHub followers" />
-</a>
-
-<img src="https://komarev.com/ghpvc/?username=Samarssj&style=for-the-badge&color=6C63FF&label=PROFILE+VIEWS" alt="Profile views" />
+<table align="center" border="0">
+  <tr>
+    <td align="center">
+      <a href="https://samar-portfolio1.vercel.app" target="_blank">
+        <img src="https://img.shields.io/badge/Portfolio-Visit%20my%20portfolio-6C63FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/samar-singh-3a4560289" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Samarssj" target="_blank">
+        <img src="https://img.shields.io/github/followers/Samarssj?label=Follow&style=for-the-badge&logo=github&logoColor=white&color=181717" alt="GitHub followers" />
+      </a>
+    </td>
+    <td align="center">
+      <img src="https://komarev.com/ghpvc/?username=Samarssj&style=for-the-badge&color=6C63FF&label=PROFILE+VIEWS" alt="Profile views" />
+    </td>
+  </tr>
+</table>
 
 </div>
 
