@@ -61,10 +61,10 @@ At **EXL Services**, I work with technologies including **GCP, CX Agent Studio, 
 <div align="center">
 
 <a href="https://github.com/Samarssj">
-  <img height="180" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Samarssj&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=tokyonight&hide_border=true&border_radius=12" alt="Samar's GitHub statistics" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Samarssj&theme=tokyonight" alt="Samar's GitHub statistics" />
 </a>
 <a href="https://github.com/Samarssj">
-  <img height="180" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Samarssj&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&border_radius=12" alt="Samar's most used languages" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Samarssj&theme=tokyonight" alt="Samar's repositories by language" />
 </a>
 
 <br />
