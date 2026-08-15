@@ -62,6 +62,8 @@ At **EXL Services**, I work with technologies including **GCP, CX Agent Studio, 
   <img src="https://skillicons.dev/icons?i=java,python,js,nodejs,mongodb,firebase,sqlite,gcp,docker,kubernetes,jupyter,fastapi,git,github&perline=7" alt="Technology stack icons" />
 </a>
 
+<img src="https://img.shields.io/badge/HTML5-228B22?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+
 <br />
 
 <img src="https://img.shields.io/badge/Generative%20AI-6C63FF?style=flat-square" alt="Generative AI" />
