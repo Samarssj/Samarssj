@@ -34,7 +34,7 @@
   <text x="842" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">TOTAL</text>
   <text x="842" y="63" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">285</text>
   <text x="954" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">PEAK DAY</text>
-  <text x="954" y="63" fill="#f472b6" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">41</text>
+  <text x="954" y="63" fill="#f472b6" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">40</text>
   <text x="1060" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">LAST 365 DAYS</text>
   <text x="1060" y="63" fill="#a78bfa" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">LIVE</text>
   <rect x="48" y="88" width="1108" height="176" rx="18" fill="#0a0f21" fill-opacity="0.72" stroke="#26345c"/>
@@ -216,8 +216,8 @@
   <text x="568" y="92" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">Feb</text>
   <rect x="568" y="133" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-02  ·  0 contributions</title></rect>
   <rect x="568" y="154" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-03  ·  0 contributions</title></rect>
-  <rect x="568" y="175" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-04  ·  0 contributions</title></rect>
-  <rect x="568" y="196" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-02-05  ·  3 contributions</title></rect>
+  <rect x="568" y="175" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-02-04  ·  1 contribution</title></rect>
+  <rect x="568" y="196" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-02-05  ·  2 contributions</title></rect>
   <rect x="568" y="217" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-06  ·  0 contributions</title></rect>
   <rect x="568" y="238" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-07  ·  0 contributions</title></rect>
   <rect x="589" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-02-08  ·  0 contributions</title></rect>
@@ -339,8 +339,8 @@
   <rect x="925" y="133" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-01  ·  0 contributions</title></rect>
   <rect x="925" y="154" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-02  ·  0 contributions</title></rect>
   <rect x="925" y="175" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-03  ·  0 contributions</title></rect>
-  <rect x="925" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-04  ·  0 contributions</title></rect>
-  <rect x="925" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-05  ·  6 contributions</title></rect>
+  <rect x="925" y="196" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-04  ·  1 contribution</title></rect>
+  <rect x="925" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-05  ·  5 contributions</title></rect>
   <rect x="925" y="238" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-06  ·  0 contributions</title></rect>
   <rect x="946" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-07  ·  0 contributions</title></rect>
   <text x="946" y="92" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">Jun</text>
@@ -357,8 +357,8 @@
   <rect x="967" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-18  ·  0 contributions</title></rect>
   <rect x="967" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-19  ·  1 contribution</title></rect>
   <rect x="967" y="238" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-20  ·  0 contributions</title></rect>
-  <rect x="988" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-21  ·  0 contributions</title></rect>
-  <rect x="988" y="133" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-22  ·  5 contributions</title></rect>
+  <rect x="988" y="112" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-21  ·  1 contribution</title></rect>
+  <rect x="988" y="133" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-22  ·  4 contributions</title></rect>
   <rect x="988" y="154" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-06-23  ·  1 contribution</title></rect>
   <rect x="988" y="175" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-06-24  ·  9 contributions</title></rect>
   <rect x="988" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-06-25  ·  0 contributions</title></rect>
@@ -369,23 +369,23 @@
   <rect x="1009" y="154" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-06-30  ·  11 contributions</title></rect>
   <rect x="1009" y="175" width="16" height="16" rx="5" fill="#a855f7" stroke="#0b1020" stroke-width="1"><title>2026-07-01  ·  23 contributions</title></rect>
   <rect x="1009" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-02  ·  0 contributions</title></rect>
-  <rect x="1009" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-03  ·  2 contributions</title></rect>
-  <rect x="1009" y="238" width="16" height="16" rx="5" fill="#22d3ee" stroke="#0b1020" stroke-width="1"><title>2026-07-04  ·  41 contributions</title></rect>
+  <rect x="1009" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-03  ·  3 contributions</title></rect>
+  <rect x="1009" y="238" width="16" height="16" rx="5" fill="#22d3ee" stroke="#0b1020" stroke-width="1"><title>2026-07-04  ·  40 contributions</title></rect>
   <rect x="1030" y="112" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-07-05  ·  11 contributions</title></rect>
   <text x="1030" y="92" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">Jul</text>
   <rect x="1030" y="133" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-06  ·  3 contributions</title></rect>
   <rect x="1030" y="154" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-07  ·  5 contributions</title></rect>
   <rect x="1030" y="175" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-08  ·  1 contribution</title></rect>
   <rect x="1030" y="196" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-07-09  ·  12 contributions</title></rect>
-  <rect x="1030" y="217" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-07-10  ·  9 contributions</title></rect>
-  <rect x="1030" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-11  ·  6 contributions</title></rect>
+  <rect x="1030" y="217" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-07-10  ·  10 contributions</title></rect>
+  <rect x="1030" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-11  ·  5 contributions</title></rect>
   <rect x="1051" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-12  ·  0 contributions</title></rect>
   <rect x="1051" y="133" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-13  ·  4 contributions</title></rect>
   <rect x="1051" y="154" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-14  ·  3 contributions</title></rect>
   <rect x="1051" y="175" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-15  ·  7 contributions</title></rect>
   <rect x="1051" y="196" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-16  ·  1 contribution</title></rect>
-  <rect x="1051" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-17  ·  1 contribution</title></rect>
-  <rect x="1051" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-18  ·  7 contributions</title></rect>
+  <rect x="1051" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-17  ·  2 contributions</title></rect>
+  <rect x="1051" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-18  ·  6 contributions</title></rect>
   <rect x="1072" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-19  ·  0 contributions</title></rect>
   <rect x="1072" y="133" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-20  ·  0 contributions</title></rect>
   <rect x="1072" y="154" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-21  ·  0 contributions</title></rect>
@@ -395,8 +395,8 @@
   <rect x="1072" y="238" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-25  ·  0 contributions</title></rect>
   <rect x="1093" y="112" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-26  ·  0 contributions</title></rect>
   <rect x="1093" y="133" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-27  ·  0 contributions</title></rect>
-  <rect x="1093" y="154" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-28  ·  0 contributions</title></rect>
-  <rect x="1093" y="175" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-07-29  ·  9 contributions</title></rect>
+  <rect x="1093" y="154" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-28  ·  1 contribution</title></rect>
+  <rect x="1093" y="175" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-07-29  ·  8 contributions</title></rect>
   <rect x="1093" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-30  ·  0 contributions</title></rect>
   <rect x="1093" y="217" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-07-31  ·  0 contributions</title></rect>
   <rect x="1093" y="238" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-08-01  ·  0 contributions</title></rect>
@@ -413,8 +413,8 @@
   <rect x="1135" y="154" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-08-11  ·  0 contributions</title></rect>
   <rect x="1135" y="175" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-08-12  ·  0 contributions</title></rect>
   <rect x="1135" y="196" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-08-13  ·  0 contributions</title></rect>
-  <rect x="1135" y="217" width="16" height="16" rx="5" fill="#18203a" stroke="#0b1020" stroke-width="1"><title>2026-08-14  ·  0 contributions</title></rect>
-  <rect x="1135" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-08-15  ·  6 contributions</title></rect>
+  <rect x="1135" y="217" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-08-14  ·  1 contribution</title></rect>
+  <rect x="1135" y="238" width="16" height="16" rx="5" fill="#36215f" stroke="#0b1020" stroke-width="1"><title>2026-08-15  ·  5 contributions</title></rect>
   <rect x="1156" y="112" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-08-16  ·  15 contributions</title></rect>
   <rect x="1156" y="133" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-08-17  ·  10 contributions</title></rect>
   <rect x="1156" y="154" width="16" height="16" rx="5" fill="#63318c" stroke="#0b1020" stroke-width="1"><title>2026-08-18  ·  10 contributions</title></rect>
