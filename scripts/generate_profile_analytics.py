@@ -33,7 +33,7 @@ PALETTE = {
 LANGUAGE_COLORS = {
     "Python": "#3776ab",
     "JavaScript": "#f1e05a",
-    "TypeScript": "#3178c6",
+    "TypeScript": "#8b5cf6",
     "Java": "#b07219",
     "HTML": "#e34c26",
     "CSS": "#563d7c",
@@ -136,8 +136,8 @@ def card(x: int, y: int, width: int, height: int, label: str, value: int, accent
         f'<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="16" fill="{PALETTE["panel"]}" fill-opacity="0.84" stroke="{PALETTE["line"]}"/>',
         f'<rect x="{x}" y="{y}" width="5" height="{height}" rx="3" fill="{accent}"/>',
         f'<circle cx="{x + 26}" cy="{y + 25}" r="5" fill="{accent}" filter="url(#glow)"/>',
-        text(x + 42, y + 30, label.upper(), 11, PALETTE["muted"], "700", letter_spacing=1),
-        text(x + 24, y + 56, fmt(value), 24, PALETTE["text"], "700"),
+        text(x + 42, y + 31, label.upper(), 13, PALETTE["muted"], "700", letter_spacing=1),
+        text(x + 24, y + 58, fmt(value), 27, PALETTE["text"], "700"),
     ]
 
 
@@ -153,11 +153,11 @@ def generate_stats(repos: list[dict], contributions: dict) -> None:
         ("Code reviews", contributions["totalPullRequestReviewContributions"], PALETTE["purple"]),
     ]
     body = [
-        text(28, 42, "GitHub Pulse", 25, PALETTE["text"], "700"),
-        text(28, 67, f"{USERNAME}  /  live profile snapshot", 13, PALETTE["muted"]),
+        text(28, 44, "GitHub Pulse", 30, PALETTE["text"], "700"),
+        text(28, 72, f"{USERNAME}  /  live profile snapshot", 15, PALETTE["muted"]),
         '<rect x="548" y="28" width="144" height="28" rx="14" fill="#12363d" stroke="#1e6b73"/>',
         '<circle cx="566" cy="42" r="4" fill="#22d3ee" filter="url(#glow)"/>',
-        text(578, 47, "SYNCED", 11, PALETTE["cyan"], "700", letter_spacing=1),
+        text(578, 48, "SYNCED", 13, PALETTE["cyan"], "700", letter_spacing=1),
     ]
     for index, (label, value, accent) in enumerate(metrics):
         col = index % 3
@@ -165,8 +165,8 @@ def generate_stats(repos: list[dict], contributions: dict) -> None:
         body.extend(card(28 + col * 228, 94 + row * 78, 210, 64, label, value, accent))
     updated = datetime.now(timezone.utc).strftime("%d %b %Y  ·  %H:%M UTC")
     body.extend([
-        text(28, 270, f"LAST SYNC  {updated}", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(692, 270, "AUTO-REFRESH  /  EVERY 6 HOURS", 10, PALETTE["muted"], "700", "end", 1),
+        text(28, 272, f"LAST SYNC  {updated}", 12, PALETTE["muted"], "700", letter_spacing=1),
+        text(692, 272, "AUTO-REFRESH  /  EVERY 6 HOURS", 12, PALETTE["muted"], "700", "end", 1),
     ])
     (ASSETS / "github-stats.svg").write_text(svg_document(720, 292, "\n  ".join(body), "GitHub Pulse statistics for Samar Singh"), encoding="utf-8")
 
@@ -178,10 +178,10 @@ def generate_languages(repos: list[dict]) -> None:
     center_x, center_y, radius = 175, 166, 92
     circumference = 2 * 3.141592653589793 * radius
     body = [
-        text(28, 42, "Repository DNA", 25, PALETTE["text"], "700"),
-        text(28, 67, "Language mix across active repositories", 13, PALETTE["muted"]),
-        text(690, 48, fmt(len(repos)), 25, PALETTE["cyan"], "700", "end"),
-        text(690, 68, "PUBLIC REPOS", 10, PALETTE["muted"], "700", "end", 1),
+        text(28, 44, "Repository DNA", 28, PALETTE["text"], "700"),
+        text(28, 71, "Language mix across active repositories", 15, PALETTE["muted"]),
+        text(690, 50, fmt(len(repos)), 28, PALETTE["cyan"], "700", "end"),
+        text(690, 72, "PUBLIC REPOS", 11, PALETTE["muted"], "700", "end", 1),
         f'<circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="#202b4c" stroke-width="30"/>',
     ]
     offset = 0.0
@@ -196,21 +196,21 @@ def generate_languages(repos: list[dict]) -> None:
         offset += segment
     body.extend([
         f'<circle cx="{center_x}" cy="{center_y}" r="60" fill="{PALETTE["panel"]}" stroke="{PALETTE["line"]}"/>',
-        text(center_x, center_y - 3, fmt(len(repos)), 27, PALETTE["text"], "700", "middle"),
-        text(center_x, center_y + 20, "REPOS", 10, PALETTE["muted"], "700", "middle", 1),
+        text(center_x, center_y - 3, fmt(len(repos)), 30, PALETTE["text"], "700", "middle"),
+        text(center_x, center_y + 21, "REPOS", 11, PALETTE["muted"], "700", "middle", 1),
     ])
     for index, (language, count) in enumerate(items):
-        y = 104 + index * 30
+        y = 108 + index * 31
         percent = count / total
         color = LANGUAGE_COLORS.get(language, PALETTE["purple"])
         body.extend([
             f'<circle cx="360" cy="{y - 5}" r="6" fill="{color}"/>',
-            text(378, y, language, 14, PALETTE["text"], "600"),
-            text(690, y, f"{count} repo{'s' if count != 1 else ''}  ·  {percent:.0%}", 12, PALETTE["muted"], "600", "end"),
+            text(378, y, language, 16, PALETTE["text"], "600"),
+            text(690, y, f"{count} repo{'s' if count != 1 else ''}  ·  {percent:.0%}", 14, PALETTE["muted"], "600", "end"),
         ])
     body.extend([
         f'<rect x="28" y="272" width="664" height="1" fill="{PALETTE["line"]}"/>',
-        text(28, 288, "Donut share  ·  ranked by repository count  ·  refreshed with GitHub", 10, PALETTE["muted"], "600"),
+        text(28, 288, "Donut share  ·  ranked by repository count  ·  refreshed with GitHub", 11, PALETTE["muted"], "600"),
     ])
     (ASSETS / "github-languages.svg").write_text(svg_document(720, 300, "\n  ".join(body), "Repository language donut chart for Samar Singh"), encoding="utf-8")
 
@@ -241,15 +241,15 @@ def generate_contributions(contribution_data: dict) -> None:
         line_path += f" C {previous_x + distance:.1f} {previous_y:.1f}, {current_x - distance:.1f} {current_y:.1f}, {current_x:.1f} {current_y:.1f}"
     area_path = f"{line_path} L {points[-1][0]:.1f} {baseline} L {points[0][0]:.1f} {baseline} Z"
     body = [
-        text(28, 42, "Contribution Wave", 25, PALETTE["text"], "700"),
-        text(28, 68, "Weekly momentum, shaped from your live GitHub activity calendar", 13, PALETTE["muted"]),
+        text(28, 45, "Contribution Wave", 30, PALETTE["text"], "700"),
+        text(28, 73, "Weekly momentum, shaped from your live GitHub activity calendar", 15, PALETTE["muted"]),
         f'<rect x="818" y="26" width="354" height="45" rx="14" fill="{PALETTE["panel"]}" stroke="{PALETTE["line"]}"/>',
-        text(842, 45, "TOTAL", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(842, 63, fmt(total), 17, PALETTE["cyan"], "700"),
-        text(954, 45, "PEAK WEEK", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(954, 63, fmt(peak_week), 17, PALETTE["pink"], "700"),
-        text(1060, 45, "LAST 365 DAYS", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(1060, 63, "LIVE", 17, PALETTE["purple"], "700"),
+        text(842, 45, "TOTAL", 12, PALETTE["muted"], "700", letter_spacing=1),
+        text(842, 64, fmt(total), 20, PALETTE["cyan"], "700"),
+        text(954, 45, "PEAK WEEK", 12, PALETTE["muted"], "700", letter_spacing=1),
+        text(954, 64, fmt(peak_week), 20, PALETTE["pink"], "700"),
+        text(1060, 45, "LAST 365 DAYS", 12, PALETTE["muted"], "700", letter_spacing=1),
+        text(1060, 64, "LIVE", 20, PALETTE["purple"], "700"),
         f'<rect x="{plot_left - 18}" y="{plot_top - 24}" width="1106" height="184" rx="18" fill="#0a0f21" fill-opacity="0.72" stroke="{PALETTE["line"]}"/>',
         f'<line x1="{plot_left}" y1="{baseline}" x2="{plot_right}" y2="{baseline}" stroke="{PALETTE["line"]}"/>',
         f'<line x1="{plot_left}" y1="{plot_top + 68}" x2="{plot_right}" y2="{plot_top + 68}" stroke="{PALETTE["line"]}" stroke-dasharray="3 8" opacity="0.7"/>',
@@ -262,12 +262,12 @@ def generate_contributions(contribution_data: dict) -> None:
     for index in range(0, len(weeks), 4):
         date = weeks[index]["contributionDays"][0]["date"]
         x = plot_left + (plot_width * index / max(len(weeks) - 1, 1))
-        body.append(text(x, 292, datetime.strptime(date, "%Y-%m-%d").strftime("%b %Y"), 10, PALETTE["muted"], "600", "middle"))
+        body.append(text(x, 292, datetime.strptime(date, "%Y-%m-%d").strftime("%b %Y"), 11, PALETTE["muted"], "600", "middle"))
     body.extend([
-        text(22, plot_top + 5, fmt(maximum), 10, PALETTE["muted"], "600"),
-        text(30, baseline + 4, "0", 10, PALETTE["muted"], "600"),
-        text(72, 322, "LOW MOMENTUM", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(1172, 322, f"PEAK DAY  {busiest['date']}  ·  {busiest['contributionCount']} contributions", 10, PALETTE["muted"], "600", "end"),
+        text(22, plot_top + 5, fmt(maximum), 11, PALETTE["muted"], "600"),
+        text(30, baseline + 4, "0", 11, PALETTE["muted"], "600"),
+        text(72, 322, "LOW MOMENTUM", 11, PALETTE["muted"], "700", letter_spacing=1),
+        text(1172, 322, f"PEAK DAY  {busiest['date']}  ·  {busiest['contributionCount']} contributions", 11, PALETTE["muted"], "600", "end"),
     ])
     (ASSETS / "github-contributions.svg").write_text(svg_document(1200, 342, "\n  ".join(body), "GitHub contribution wave for Samar Singh"), encoding="utf-8")
 

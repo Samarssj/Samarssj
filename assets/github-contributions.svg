@@ -37,15 +37,15 @@
   <rect width="100%" height="100%" rx="22" fill="url(#bg)"/>
   <rect width="100%" height="100%" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="100%" height="5" rx="3" fill="url(#accent)"/>
-  <text x="28" y="42" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="25px" font-weight="700" text-anchor="start">Contribution Wave</text>
-  <text x="28" y="68" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="400" text-anchor="start">Weekly momentum, shaped from your live GitHub activity calendar</text>
+  <text x="28" y="45" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="30px" font-weight="700" text-anchor="start">Contribution Wave</text>
+  <text x="28" y="73" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="15px" font-weight="400" text-anchor="start">Weekly momentum, shaped from your live GitHub activity calendar</text>
   <rect x="818" y="26" width="354" height="45" rx="14" fill="#111936" stroke="#26345c"/>
-  <text x="842" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">TOTAL</text>
-  <text x="842" y="63" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">286</text>
-  <text x="954" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">PEAK WEEK</text>
-  <text x="954" y="63" fill="#f472b6" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">82</text>
-  <text x="1060" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">LAST 365 DAYS</text>
-  <text x="1060" y="63" fill="#a78bfa" font-family="Arial, Helvetica, sans-serif" font-size="17px" font-weight="700" text-anchor="start">LIVE</text>
+  <text x="842" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="start" letter-spacing="1px">TOTAL</text>
+  <text x="842" y="64" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="20px" font-weight="700" text-anchor="start">286</text>
+  <text x="954" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="start" letter-spacing="1px">PEAK WEEK</text>
+  <text x="954" y="64" fill="#f472b6" font-family="Arial, Helvetica, sans-serif" font-size="20px" font-weight="700" text-anchor="start">82</text>
+  <text x="1060" y="45" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="start" letter-spacing="1px">LAST 365 DAYS</text>
+  <text x="1060" y="64" fill="#a78bfa" font-family="Arial, Helvetica, sans-serif" font-size="20px" font-weight="700" text-anchor="start">LIVE</text>
   <rect x="54" y="88" width="1106" height="184" rx="18" fill="#0a0f21" fill-opacity="0.72" stroke="#26345c"/>
   <line x1="72" y1="264" x2="1142" y2="264" stroke="#26345c"/>
   <line x1="72" y1="180" x2="1142" y2="180" stroke="#26345c" stroke-dasharray="3 8" opacity="0.7"/>
@@ -66,22 +66,22 @@
   <circle cx="1100.8" cy="227.5" r="4" fill="#22d3ee" stroke="#0b1020" stroke-width="2"><title>Week 51: 22 contributions</title></circle>
   <circle cx="1121.4" cy="252.4" r="4" fill="#22d3ee" stroke="#0b1020" stroke-width="2"><title>Week 52: 7 contributions</title></circle>
   <circle cx="1142.0" cy="204.3" r="4" fill="#22d3ee" stroke="#0b1020" stroke-width="2"><title>Week 53: 36 contributions</title></circle>
-  <text x="72.0" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Aug 2025</text>
-  <text x="154.30769230769232" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Sep 2025</text>
-  <text x="236.6153846153846" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Oct 2025</text>
-  <text x="318.9230769230769" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Nov 2025</text>
-  <text x="401.2307692307692" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Dec 2025</text>
-  <text x="483.53846153846155" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Jan 2026</text>
-  <text x="565.8461538461538" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Feb 2026</text>
-  <text x="648.1538461538462" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Mar 2026</text>
-  <text x="730.4615384615385" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Mar 2026</text>
-  <text x="812.7692307692307" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Apr 2026</text>
-  <text x="895.0769230769231" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">May 2026</text>
-  <text x="977.3846153846154" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Jun 2026</text>
-  <text x="1059.6923076923076" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Jul 2026</text>
-  <text x="1142.0" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="middle">Aug 2026</text>
-  <text x="22" y="117" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="start">82</text>
-  <text x="30" y="268" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="start">0</text>
-  <text x="72" y="322" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="start" letter-spacing="1px">LOW MOMENTUM</text>
-  <text x="1172" y="322" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="end">PEAK DAY  2026-07-04  ·  40 contributions</text>
+  <text x="72.0" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Aug 2025</text>
+  <text x="154.30769230769232" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Sep 2025</text>
+  <text x="236.6153846153846" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Oct 2025</text>
+  <text x="318.9230769230769" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Nov 2025</text>
+  <text x="401.2307692307692" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Dec 2025</text>
+  <text x="483.53846153846155" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Jan 2026</text>
+  <text x="565.8461538461538" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Feb 2026</text>
+  <text x="648.1538461538462" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Mar 2026</text>
+  <text x="730.4615384615385" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Mar 2026</text>
+  <text x="812.7692307692307" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Apr 2026</text>
+  <text x="895.0769230769231" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">May 2026</text>
+  <text x="977.3846153846154" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Jun 2026</text>
+  <text x="1059.6923076923076" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Jul 2026</text>
+  <text x="1142.0" y="292" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="middle">Aug 2026</text>
+  <text x="22" y="117" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">82</text>
+  <text x="30" y="268" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">0</text>
+  <text x="72" y="322" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="700" text-anchor="start" letter-spacing="1px">LOW MOMENTUM</text>
+  <text x="1172" y="322" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="end">PEAK DAY  2026-07-04  ·  41 contributions</text>
 </svg>
