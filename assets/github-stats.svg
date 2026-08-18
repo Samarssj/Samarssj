@@ -72,6 +72,6 @@
   <circle cx="510" cy="197" r="5" fill="#a78bfa" filter="url(#glow)"/>
   <text x="526" y="203" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="700" text-anchor="start" letter-spacing="1px">CODE REVIEWS</text>
   <text x="508" y="230" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="27px" font-weight="700" text-anchor="start">0</text>
-  <text x="28" y="272" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="start" letter-spacing="1px">LAST SYNC  18 Aug 2026  ·  14:00 UTC</text>
+  <text x="28" y="272" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="start" letter-spacing="1px">LAST SYNC  18 Aug 2026  ·  14:02 UTC</text>
   <text x="692" y="272" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="700" text-anchor="end" letter-spacing="1px">AUTO-REFRESH  /  EVERY 6 HOURS</text>
 </svg>

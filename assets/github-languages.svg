@@ -37,34 +37,34 @@
   <rect width="100%" height="100%" rx="22" fill="url(#bg)"/>
   <rect width="100%" height="100%" rx="22" fill="url(#grid)"/>
   <rect x="0" y="0" width="100%" height="5" rx="3" fill="url(#accent)"/>
-  <text x="28" y="42" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="25px" font-weight="700" text-anchor="start">Repository DNA</text>
-  <text x="28" y="67" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="400" text-anchor="start">Language mix across active repositories</text>
-  <text x="690" y="48" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="25px" font-weight="700" text-anchor="end">20</text>
-  <text x="690" y="68" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="end" letter-spacing="1px">PUBLIC REPOS</text>
+  <text x="28" y="44" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="28px" font-weight="700" text-anchor="start">Repository DNA</text>
+  <text x="28" y="71" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="15px" font-weight="400" text-anchor="start">Language mix across active repositories</text>
+  <text x="690" y="50" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="28px" font-weight="700" text-anchor="end">20</text>
+  <text x="690" y="72" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="700" text-anchor="end" letter-spacing="1px">PUBLIC REPOS</text>
   <circle cx="175" cy="166" r="92" fill="none" stroke="#202b4c" stroke-width="30"/>
   <circle cx="175" cy="166" r="92" fill="none" stroke="#3776ab" stroke-width="30" stroke-linecap="round" stroke-dasharray="251.91 578.05" stroke-dashoffset="-0.00" transform="rotate(-90 175 166)" filter="url(#glow)"><title>Python: 8 repositories</title></circle>
   <circle cx="175" cy="166" r="92" fill="none" stroke="#e34c26" stroke-width="30" stroke-linecap="round" stroke-dasharray="123.46 578.05" stroke-dashoffset="-256.91" transform="rotate(-90 175 166)" filter="url(#glow)"><title>HTML: 4 repositories</title></circle>
-  <circle cx="175" cy="166" r="92" fill="none" stroke="#3178c6" stroke-width="30" stroke-linecap="round" stroke-dasharray="91.34 578.05" stroke-dashoffset="-385.37" transform="rotate(-90 175 166)" filter="url(#glow)"><title>TypeScript: 3 repositories</title></circle>
+  <circle cx="175" cy="166" r="92" fill="none" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round" stroke-dasharray="91.34 578.05" stroke-dashoffset="-385.37" transform="rotate(-90 175 166)" filter="url(#glow)"><title>TypeScript: 3 repositories</title></circle>
   <circle cx="175" cy="166" r="92" fill="none" stroke="#da5b0b" stroke-width="30" stroke-linecap="round" stroke-dasharray="59.23 578.05" stroke-dashoffset="-481.71" transform="rotate(-90 175 166)" filter="url(#glow)"><title>Jupyter Notebook: 2 repositories</title></circle>
   <circle cx="175" cy="166" r="92" fill="none" stroke="#f1e05a" stroke-width="30" stroke-linecap="round" stroke-dasharray="27.11 578.05" stroke-dashoffset="-545.94" transform="rotate(-90 175 166)" filter="url(#glow)"><title>JavaScript: 1 repositories</title></circle>
   <circle cx="175" cy="166" r="60" fill="#111936" stroke="#26345c"/>
-  <text x="175" y="163" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="27px" font-weight="700" text-anchor="middle">20</text>
-  <text x="175" y="186" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="700" text-anchor="middle" letter-spacing="1px">REPOS</text>
-  <circle cx="360" cy="99" r="6" fill="#3776ab"/>
-  <text x="378" y="104" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="start">Python</text>
-  <text x="690" y="104" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="600" text-anchor="end">8 repos  ·  44%</text>
-  <circle cx="360" cy="129" r="6" fill="#e34c26"/>
-  <text x="378" y="134" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="start">HTML</text>
-  <text x="690" y="134" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="600" text-anchor="end">4 repos  ·  22%</text>
-  <circle cx="360" cy="159" r="6" fill="#3178c6"/>
-  <text x="378" y="164" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="start">TypeScript</text>
-  <text x="690" y="164" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="600" text-anchor="end">3 repos  ·  17%</text>
-  <circle cx="360" cy="189" r="6" fill="#da5b0b"/>
-  <text x="378" y="194" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="start">Jupyter Notebook</text>
-  <text x="690" y="194" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="600" text-anchor="end">2 repos  ·  11%</text>
-  <circle cx="360" cy="219" r="6" fill="#f1e05a"/>
-  <text x="378" y="224" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="start">JavaScript</text>
-  <text x="690" y="224" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="12px" font-weight="600" text-anchor="end">1 repo  ·  6%</text>
+  <text x="175" y="163" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="30px" font-weight="700" text-anchor="middle">20</text>
+  <text x="175" y="187" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="700" text-anchor="middle" letter-spacing="1px">REPOS</text>
+  <circle cx="360" cy="103" r="6" fill="#3776ab"/>
+  <text x="378" y="108" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="16px" font-weight="600" text-anchor="start">Python</text>
+  <text x="690" y="108" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="end">8 repos  ·  44%</text>
+  <circle cx="360" cy="134" r="6" fill="#e34c26"/>
+  <text x="378" y="139" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="16px" font-weight="600" text-anchor="start">HTML</text>
+  <text x="690" y="139" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="end">4 repos  ·  22%</text>
+  <circle cx="360" cy="165" r="6" fill="#8b5cf6"/>
+  <text x="378" y="170" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="16px" font-weight="600" text-anchor="start">TypeScript</text>
+  <text x="690" y="170" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="end">3 repos  ·  17%</text>
+  <circle cx="360" cy="196" r="6" fill="#da5b0b"/>
+  <text x="378" y="201" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="16px" font-weight="600" text-anchor="start">Jupyter Notebook</text>
+  <text x="690" y="201" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="end">2 repos  ·  11%</text>
+  <circle cx="360" cy="227" r="6" fill="#f1e05a"/>
+  <text x="378" y="232" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="16px" font-weight="600" text-anchor="start">JavaScript</text>
+  <text x="690" y="232" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14px" font-weight="600" text-anchor="end">1 repo  ·  6%</text>
   <rect x="28" y="272" width="664" height="1" fill="#26345c"/>
-  <text x="28" y="288" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="10px" font-weight="600" text-anchor="start">Donut share  ·  ranked by repository count  ·  refreshed with GitHub</text>
+  <text x="28" y="288" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="11px" font-weight="600" text-anchor="start">Donut share  ·  ranked by repository count  ·  refreshed with GitHub</text>
 </svg>
