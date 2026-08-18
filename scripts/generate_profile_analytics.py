@@ -102,6 +102,15 @@ def svg_document(width: int, height: int, body: str, title: str) -> str:
       <stop offset="0%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
+    <linearGradient id="waveLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="52%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="waveFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.02"/>
+    </linearGradient>
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -164,104 +173,103 @@ def generate_stats(repos: list[dict], contributions: dict) -> None:
 
 def generate_languages(repos: list[dict]) -> None:
     counts = Counter(repo.get("language") for repo in repos if repo.get("language"))
-    items = counts.most_common(5)
+    items = counts.most_common(6)
     total = max(sum(count for _, count in items), 1)
+    center_x, center_y, radius = 175, 166, 92
+    circumference = 2 * 3.141592653589793 * radius
     body = [
         text(28, 42, "Repository DNA", 25, PALETTE["text"], "700"),
         text(28, 67, "Language mix across active repositories", 13, PALETTE["muted"]),
         text(690, 48, fmt(len(repos)), 25, PALETTE["cyan"], "700", "end"),
         text(690, 68, "PUBLIC REPOS", 10, PALETTE["muted"], "700", "end", 1),
+        f'<circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="#202b4c" stroke-width="30"/>',
     ]
-    if not items:
-        body.append(text(28, 130, "No language data available yet.", 16, PALETTE["muted"]))
+    offset = 0.0
     for index, (language, count) in enumerate(items):
-        y = 104 + index * 34
+        segment = circumference * count / total
+        color = LANGUAGE_COLORS.get(language, PALETTE["purple"])
+        body.append(
+            f'<circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="{color}" stroke-width="30" '
+            f'stroke-linecap="round" stroke-dasharray="{max(segment - 5, 0):.2f} {circumference:.2f}" '
+            f'stroke-dashoffset="{-offset:.2f}" transform="rotate(-90 {center_x} {center_y})" filter="url(#glow)"><title>{esc(language)}: {count} repositories</title></circle>'
+        )
+        offset += segment
+    body.extend([
+        f'<circle cx="{center_x}" cy="{center_y}" r="60" fill="{PALETTE["panel"]}" stroke="{PALETTE["line"]}"/>',
+        text(center_x, center_y - 3, fmt(len(repos)), 27, PALETTE["text"], "700", "middle"),
+        text(center_x, center_y + 20, "REPOS", 10, PALETTE["muted"], "700", "middle", 1),
+    ])
+    for index, (language, count) in enumerate(items):
+        y = 104 + index * 30
         percent = count / total
-        width = max(12, round(percent * 430))
         color = LANGUAGE_COLORS.get(language, PALETTE["purple"])
         body.extend([
-            f'<circle cx="36" cy="{y - 5}" r="6" fill="{color}"/>',
-            text(54, y, language, 14, PALETTE["text"], "600"),
+            f'<circle cx="360" cy="{y - 5}" r="6" fill="{color}"/>',
+            text(378, y, language, 14, PALETTE["text"], "600"),
             text(690, y, f"{count} repo{'s' if count != 1 else ''}  ·  {percent:.0%}", 12, PALETTE["muted"], "600", "end"),
-            f'<rect x="54" y="{y + 8}" width="590" height="7" rx="4" fill="#202b4c"/>',
-            f'<rect x="54" y="{y + 8}" width="{width}" height="7" rx="4" fill="{color}" filter="url(#glow)"/>',
         ])
     body.extend([
         f'<rect x="28" y="272" width="664" height="1" fill="{PALETTE["line"]}"/>',
-        text(28, 288, "Ranked by repository count  ·  refreshed with GitHub", 10, PALETTE["muted"], "600"),
+        text(28, 288, "Donut share  ·  ranked by repository count  ·  refreshed with GitHub", 10, PALETTE["muted"], "600"),
     ])
-    (ASSETS / "github-languages.svg").write_text(svg_document(720, 300, "\n  ".join(body), "Repository language mix for Samar Singh"), encoding="utf-8")
-
-
-def contribution_level(count: int, maximum: int) -> int:
-    if count <= 0:
-        return 0
-    if maximum <= 4:
-        return min(count, 4)
-    ratio = count / maximum
-    if ratio <= 0.2:
-        return 1
-    if ratio <= 0.5:
-        return 2
-    if ratio <= 0.8:
-        return 3
-    return 4
+    (ASSETS / "github-languages.svg").write_text(svg_document(720, 300, "\n  ".join(body), "Repository language donut chart for Samar Singh"), encoding="utf-8")
 
 
 def generate_contributions(contribution_data: dict) -> None:
     calendar = contribution_data["contributionCalendar"]
     weeks = calendar["weeks"][-53:]
+    weekly_totals = [sum(day["contributionCount"] for day in week["contributionDays"]) for week in weeks]
     days = [day for week in weeks for day in week["contributionDays"]]
-    maximum = max((day["contributionCount"] for day in days), default=0)
     total = calendar["totalContributions"]
+    peak_week = max(weekly_totals, default=0)
     busiest = max(days, key=lambda day: day["contributionCount"], default={"date": "n/a", "contributionCount": 0})
-    palette = ["#18203a", "#36215f", "#63318c", "#a855f7", "#22d3ee"]
-    cell = 16
-    gap = 5
-    left = 64
-    top = 112
-    width = 1200
-    height = 334
+    plot_left, plot_right = 72, 1142
+    plot_top, baseline = 112, 264
+    plot_width = plot_right - plot_left
+    plot_height = 136
+    maximum = max(weekly_totals, default=0)
+    points: list[tuple[float, float]] = []
+    for index, value in enumerate(weekly_totals):
+        x = plot_left + (plot_width * index / max(len(weekly_totals) - 1, 1))
+        y = baseline - (plot_height * value / max(maximum, 1))
+        points.append((x, y))
+    line_path = f"M {points[0][0]:.1f} {points[0][1]:.1f}"
+    for index in range(1, len(points)):
+        previous_x, previous_y = points[index - 1]
+        current_x, current_y = points[index]
+        distance = (current_x - previous_x) / 2
+        line_path += f" C {previous_x + distance:.1f} {previous_y:.1f}, {current_x - distance:.1f} {current_y:.1f}, {current_x:.1f} {current_y:.1f}"
+    area_path = f"{line_path} L {points[-1][0]:.1f} {baseline} L {points[0][0]:.1f} {baseline} Z"
     body = [
-        text(28, 42, "Contribution Constellation", 25, PALETTE["text"], "700"),
-        text(28, 68, "A year of momentum, rendered from your live activity calendar", 13, PALETTE["muted"]),
+        text(28, 42, "Contribution Wave", 25, PALETTE["text"], "700"),
+        text(28, 68, "Weekly momentum, shaped from your live GitHub activity calendar", 13, PALETTE["muted"]),
         f'<rect x="818" y="26" width="354" height="45" rx="14" fill="{PALETTE["panel"]}" stroke="{PALETTE["line"]}"/>',
         text(842, 45, "TOTAL", 10, PALETTE["muted"], "700", letter_spacing=1),
         text(842, 63, fmt(total), 17, PALETTE["cyan"], "700"),
-        text(954, 45, "PEAK DAY", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(954, 63, fmt(busiest["contributionCount"]), 17, PALETTE["pink"], "700"),
+        text(954, 45, "PEAK WEEK", 10, PALETTE["muted"], "700", letter_spacing=1),
+        text(954, 63, fmt(peak_week), 17, PALETTE["pink"], "700"),
         text(1060, 45, "LAST 365 DAYS", 10, PALETTE["muted"], "700", letter_spacing=1),
         text(1060, 63, "LIVE", 17, PALETTE["purple"], "700"),
-        f'<rect x="{left - 16}" y="{top - 24}" width="1108" height="176" rx="18" fill="#0a0f21" fill-opacity="0.72" stroke="{PALETTE["line"]}"/>',
+        f'<rect x="{plot_left - 18}" y="{plot_top - 24}" width="1106" height="184" rx="18" fill="#0a0f21" fill-opacity="0.72" stroke="{PALETTE["line"]}"/>',
+        f'<line x1="{plot_left}" y1="{baseline}" x2="{plot_right}" y2="{baseline}" stroke="{PALETTE["line"]}"/>',
+        f'<line x1="{plot_left}" y1="{plot_top + 68}" x2="{plot_right}" y2="{plot_top + 68}" stroke="{PALETTE["line"]}" stroke-dasharray="3 8" opacity="0.7"/>',
+        f'<path d="{area_path}" fill="url(#waveFill)" opacity="0.78"/>',
+        f'<path d="{line_path}" fill="none" stroke="url(#waveLine)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>',
     ]
-    month_seen: set[str] = set()
-    for week_index, week in enumerate(weeks):
-        x = left + week_index * (cell + gap)
-        for day_index, day in enumerate(week["contributionDays"]):
-            y = top + day_index * (cell + gap)
-            count = day["contributionCount"]
-            level = contribution_level(count, maximum)
-            color = palette[level]
-            body.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="5" fill="{color}" stroke="#0b1020" stroke-width="1"><title>{esc(day["date"])}  ·  {count} contribution{'s' if count != 1 else ''}</title></rect>')
-            month = day["date"][:7]
-            if day_index == 0 and month not in month_seen:
-                body.append(text(x, 92, datetime.strptime(day["date"], "%Y-%m-%d").strftime("%b"), 11, PALETTE["muted"], "600"))
-                month_seen.add(month)
+    for index, (x, y) in enumerate(points):
+        if weekly_totals[index] > 0:
+            body.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{PALETTE["cyan"]}" stroke="{PALETTE["ink"]}" stroke-width="2"><title>Week {index + 1}: {weekly_totals[index]} contributions</title></circle>')
+    for index in range(0, len(weeks), 4):
+        date = weeks[index]["contributionDays"][0]["date"]
+        x = plot_left + (plot_width * index / max(len(weeks) - 1, 1))
+        body.append(text(x, 292, datetime.strptime(date, "%Y-%m-%d").strftime("%b %Y"), 10, PALETTE["muted"], "600", "middle"))
     body.extend([
-        text(12, top + 12, "Mon", 10, PALETTE["muted"], "600"),
-        text(12, top + 52, "Wed", 10, PALETTE["muted"], "600"),
-        text(12, top + 92, "Fri", 10, PALETTE["muted"], "600"),
+        text(22, plot_top + 5, fmt(maximum), 10, PALETTE["muted"], "600"),
+        text(30, baseline + 4, "0", 10, PALETTE["muted"], "600"),
+        text(72, 322, "LOW MOMENTUM", 10, PALETTE["muted"], "700", letter_spacing=1),
+        text(1172, 322, f"PEAK DAY  {busiest['date']}  ·  {busiest['contributionCount']} contributions", 10, PALETTE["muted"], "600", "end"),
     ])
-    legend_x = 64
-    legend_y = 302
-    body.append(text(64, legend_y + 12, "QUIET", 10, PALETTE["muted"], "700", letter_spacing=1))
-    for index, color in enumerate(palette):
-        body.append(f'<rect x="{legend_x + 58 + index * 23}" y="{legend_y}" width="14" height="14" rx="4" fill="{color}"/>')
-    body.extend([
-        text(legend_x + 190, legend_y + 12, "ACTIVE", 10, PALETTE["muted"], "700", letter_spacing=1),
-        text(1172, legend_y + 12, f"Peak: {busiest['date']}", 10, PALETTE["muted"], "600", "end"),
-    ])
-    (ASSETS / "github-contributions.svg").write_text(svg_document(width, height, "\n  ".join(body), "GitHub contribution constellation for Samar Singh"), encoding="utf-8")
+    (ASSETS / "github-contributions.svg").write_text(svg_document(1200, 342, "\n  ".join(body), "GitHub contribution wave for Samar Singh"), encoding="utf-8")
 
 
 def main() -> None:
