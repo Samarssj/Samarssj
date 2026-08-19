@@ -209,7 +209,7 @@ def generate_languages(repos: list[dict]) -> None:
             text(690, y, f"{count} repo{'s' if count != 1 else ''}  ·  {percent:.0%}", 14, PALETTE["muted"], "600", "end"),
         ])
     body.extend([
-        f'<rect x="28" y="272" width="664" height="1" fill="{PALETTE["line"]}"/>',
+        f'<rect x="28" y="271" width="664" height="2" rx="1" fill="url(#accent)" opacity="0.9"/>',
         text(28, 288, "Donut share  ·  ranked by repository count  ·  refreshed with GitHub", 11, PALETTE["muted"], "600"),
     ])
     (ASSETS / "github-languages.svg").write_text(svg_document(720, 300, "\n  ".join(body), "Repository language donut chart for Samar Singh"), encoding="utf-8")
