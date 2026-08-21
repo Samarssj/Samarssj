@@ -35,7 +35,7 @@ LANGUAGE_COLORS = {
     "JavaScript": "#f1e05a",
     "TypeScript": "#8b5cf6",
     "Java": "#b07219",
-    "HTML": "#e34c26",
+    "HTML": "#22c55e",
     "CSS": "#563d7c",
     "Jupyter Notebook": "#da5b0b",
     "Shell": "#89e051",
