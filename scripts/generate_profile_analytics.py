@@ -254,11 +254,21 @@ def generate_contributions(contribution_data: dict) -> None:
         f'<line x1="{plot_left}" y1="{baseline}" x2="{plot_right}" y2="{baseline}" stroke="{PALETTE["line"]}"/>',
         f'<line x1="{plot_left}" y1="{plot_top + 68}" x2="{plot_right}" y2="{plot_top + 68}" stroke="{PALETTE["line"]}" stroke-dasharray="3 8" opacity="0.7"/>',
         f'<path d="{area_path}" fill="url(#waveFill)" opacity="0.78"/>',
-        f'<path d="{line_path}" fill="none" stroke="url(#waveLine)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>',
+        f'<path id="wavePath" d="{line_path}" fill="none" stroke="url(#waveLine)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>',
     ]
     for index, (x, y) in enumerate(points):
         if weekly_totals[index] > 0:
             body.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{PALETTE["cyan"]}" stroke="{PALETTE["ink"]}" stroke-width="2"><title>Week {index + 1}: {weekly_totals[index]} contributions</title></circle>')
+    body.extend([
+        '<g aria-label="Live contribution wave marker">'
+        '  <circle r="10" fill="#22d3ee" fill-opacity="0.22" filter="url(#glow)">'
+        '    <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" path="' + esc(line_path) + '"/>'
+        '  </circle>'
+        '  <circle r="4.5" fill="#f8fafc" stroke="#22d3ee" stroke-width="2">'
+        '    <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" path="' + esc(line_path) + '"/>'
+        '  </circle>'
+        '</g>'
+    ])
     for index in range(0, len(weeks), 4):
         date = weeks[index]["contributionDays"][0]["date"]
         x = plot_left + (plot_width * index / max(len(weeks) - 1, 1))
