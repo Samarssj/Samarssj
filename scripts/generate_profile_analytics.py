@@ -262,10 +262,10 @@ def generate_contributions(contribution_data: dict) -> None:
     body.extend([
         '<g aria-label="Live contribution wave marker">'
         '  <circle r="10" fill="#22d3ee" fill-opacity="0.22" filter="url(#glow)">'
-        '    <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" path="' + esc(line_path) + '"/>'
+        '    <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#wavePath"/></animateMotion>'
         '  </circle>'
         '  <circle r="4.5" fill="#f8fafc" stroke="#22d3ee" stroke-width="2">'
-        '    <animateMotion dur="12s" repeatCount="indefinite" rotate="auto" path="' + esc(line_path) + '"/>'
+        '    <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#wavePath"/></animateMotion>'
         '  </circle>'
         '</g>'
     ])
