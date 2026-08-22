@@ -2,7 +2,7 @@
 
 <img src="./assets/omnitrix-header.svg" alt="Samar Singh profile banner with an animated Omnitrix-inspired emblem" width="100%" />
 
-# Hi there, I'm Samar Singh 👋
+
 
 ### AI Developer · Machine Learning Enthusiast · Builder of Intelligent Systems
 
