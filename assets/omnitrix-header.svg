@@ -84,10 +84,10 @@
     </g>
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
-      <path d="M-38-45Q0-57 38-45L10-8Q5-2 0 0Q-5-2-10-8Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
-      <path d="M-38 45Q0 57 38 45L10 8Q5 2 0 0Q-5 2-10 8Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
-      <path d="M-45-38Q-57 0-45 38L-8 10Q-2 5 0 0Q-2-5-8-10Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
-      <path d="M45-38Q57 0 45 38L8 10Q2 5 0 0Q2-5 8-10Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M-42-56Q0-66 42-56L14-8Q7 0 0 0Q-7 0-14-8Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M-42 56Q0 66 42 56L14 8Q7 0 0 0Q-7 0-14 8Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M-56-42Q-66 0-56 42L-8 14Q0 7 0 0Q0-7-8-14Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M56-42Q66 0 56 42L8 14Q0 7 0 0Q0-7 8-14Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
     </g>
   </g>
 
