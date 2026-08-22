@@ -72,6 +72,7 @@
       <path d="M-73-73l8 8M73 73l8 8M73-73l-8 8M-73 73l8-8"/>
     </g>
     <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
       <circle cx="0" cy="-92" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
       <circle cx="0" cy="-92" r="7" fill="url(#core)" filter="url(#greenGlow)"/>
       <circle cx="92" cy="0" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
@@ -83,10 +84,10 @@
     </g>
     <g>
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
-      <path d="M0-52L30-15L14-4L0 22L-14-4L-30-15Z" fill="url(#glass)" stroke="#86d800" stroke-width="2"/>
-      <path d="M0 52L-30 15L-14 4L0-22L14 4L30 15Z" fill="url(#glass)" stroke="#86d800" stroke-width="2"/>
-      <path d="M-42-23L-15-4L-2 0L-15 4L-42 23L-27 0Z" fill="#68716f" stroke="#9ca9a3" stroke-width="2"/>
-      <path d="M42-23L15-4L2 0L15 4L42 23L27 0Z" fill="#68716f" stroke="#9ca9a3" stroke-width="2"/>
+      <path d="M-30-45H30L10-10L5-4H-5L-10-10Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M-30 45H30L10 10L5 4H-5L-10 10Z" fill="url(#glass)" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M-45-28L-10-8L-6-3V3L-10 8L-45 28Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M45-28L10-8L6-3V3L10 8L45 28Z" fill="#68716f" stroke="#020608" stroke-width="8" stroke-linejoin="round"/>
     </g>
     <circle r="7" fill="#caff5a" opacity="0.9" filter="url(#greenGlow)">
       <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/>
