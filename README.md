@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=140&section=header&text=Samar%20Singh&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" alt="Samar Singh profile banner" />
+<img src="./assets/omnitrix-header.svg" alt="Samar Singh profile banner with an animated Omnitrix-inspired emblem" width="100%" />
 
 # Hi there, I'm Samar Singh 👋
 

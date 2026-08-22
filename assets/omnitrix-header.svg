@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Samar Singh — Omnitrix-inspired profile header</title>
+  <desc id="desc">A dark futuristic header with Samar Singh's name and a slowly spinning green Omnitrix-inspired emblem.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05090d"/>
+      <stop offset="0.55" stop-color="#0b1718"/>
+      <stop offset="1" stop-color="#101b16"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d2d9d5"/>
+      <stop offset="0.25" stop-color="#6c7977"/>
+      <stop offset="0.6" stop-color="#273333"/>
+      <stop offset="1" stop-color="#899692"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8ff72"/>
+      <stop offset="0.35" stop-color="#a9f000"/>
+      <stop offset="0.72" stop-color="#54c800"/>
+      <stop offset="1" stop-color="#1e7800"/>
+    </linearGradient>
+    <radialGradient id="core" cx="35%" cy="25%">
+      <stop offset="0" stop-color="#f1ffb0"/>
+      <stop offset="0.22" stop-color="#baff18"/>
+      <stop offset="0.62" stop-color="#78e000"/>
+      <stop offset="1" stop-color="#2c9200"/>
+    </radialGradient>
+    <filter id="greenGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#79ff2b" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <clipPath id="screenClip"><rect x="16" y="16" width="1168" height="228" rx="22"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="260" rx="26" fill="#030608"/>
+  <rect x="8" y="8" width="1184" height="244" rx="22" fill="url(#bg)" stroke="#4c625a" stroke-width="2"/>
+  <rect x="16" y="16" width="1168" height="228" rx="22" fill="url(#grid)" clip-path="url(#screenClip)"/>
+  <path d="M28 72H1172M28 188H1172" stroke="#9dff38" stroke-opacity="0.13" stroke-dasharray="2 12"/>
+  <path d="M44 42H196M1004 42H1156M44 218H250M950 218H1156" stroke="#b5ff5c" stroke-opacity="0.35" stroke-width="2"/>
+  <circle cx="48" cy="42" r="3" fill="#9dff38" filter="url(#greenGlow)"/>
+  <circle cx="1152" cy="42" r="3" fill="#9dff38" filter="url(#greenGlow)"/>
+
+  <g font-family="monospace" letter-spacing="4">
+    <text x="76" y="66" fill="#9dff38" font-size="12" opacity="0.8">PROFILE SYSTEM // ONLINE</text>
+    <text x="76" y="170" fill="#a6b5ad" font-size="14" letter-spacing="3">AI DEVELOPER · MACHINE LEARNING ENTHUSIAST · BUILDER OF INTELLIGENT SYSTEMS</text>
+    <text x="76" y="205" fill="#688078" font-size="11" letter-spacing="2">IDENTITY VERIFIED  /  INTELLIGENCE MODULES READY</text>
+  </g>
+
+  <text x="74" y="132" fill="#b8ff28" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" letter-spacing="5" filter="url(#textGlow)">SAMAR SINGH</text>
+  <path d="M76 146H620" stroke="#a9f000" stroke-width="2" stroke-opacity="0.55"/>
+  <path d="M76 151H420" stroke="#a9f000" stroke-width="1" stroke-opacity="0.22"/>
+
+  <g transform="translate(1012 130)">
+    <circle r="94" fill="#020608" stroke="#394a47" stroke-width="5"/>
+    <circle r="82" fill="#0e1d20" stroke="url(#metal)" stroke-width="11"/>
+    <circle r="65" fill="#050a0b" stroke="#7a8985" stroke-width="8"/>
+    <circle r="55" fill="#11191b" stroke="#1d2928" stroke-width="3"/>
+    <g opacity="0.9" fill="none" stroke="#9dff38" stroke-width="2">
+      <path d="M0-103V-91M0 91V103M-103 0H-91M91 0H103"/>
+      <path d="M-73-73l8 8M73 73l8 8M73-73l-8 8M-73 73l8-8"/>
+    </g>
+    <g>
+      <circle cx="0" cy="-92" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
+      <circle cx="0" cy="-92" r="7" fill="url(#core)" filter="url(#greenGlow)"/>
+      <circle cx="92" cy="0" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
+      <circle cx="92" cy="0" r="7" fill="url(#core)" filter="url(#greenGlow)"/>
+      <circle cx="0" cy="92" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
+      <circle cx="0" cy="92" r="7" fill="url(#core)" filter="url(#greenGlow)"/>
+      <circle cx="-92" cy="0" r="12" fill="#25322f" stroke="#85968d" stroke-width="4"/>
+      <circle cx="-92" cy="0" r="7" fill="url(#core)" filter="url(#greenGlow)"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      <path d="M0-52L30-15L14-4L0 22L-14-4L-30-15Z" fill="url(#glass)" stroke="#86d800" stroke-width="2"/>
+      <path d="M0 52L-30 15L-14 4L0-22L14 4L30 15Z" fill="url(#glass)" stroke="#86d800" stroke-width="2"/>
+      <path d="M-42-23L-15-4L-2 0L-15 4L-42 23L-27 0Z" fill="#68716f" stroke="#9ca9a3" stroke-width="2"/>
+      <path d="M42-23L15-4L2 0L15 4L42 23L27 0Z" fill="#68716f" stroke="#9ca9a3" stroke-width="2"/>
+    </g>
+    <circle r="7" fill="#caff5a" opacity="0.9" filter="url(#greenGlow)">
+      <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.65;1;0.65" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g font-family="monospace" font-size="10" fill="#719080" letter-spacing="2">
+    <text x="855" y="227">OMNITRIX CORE / ACTIVE</text>
+    <text x="1115" y="227">01</text>
+  </g>
+
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animateTransform, animate { display: none; }
+    }
+  </style>
+</svg>
