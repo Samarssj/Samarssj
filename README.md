@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/omnitrix-header.svg" alt="Samar Singh profile banner with an animated Omnitrix-inspired emblem" width="100%" />
+<img src="./assets/omnitrix-header.svg?v=716ce01" alt="Samar Singh profile banner with an animated Omnitrix-inspired emblem" width="100%" />
 
 
 
