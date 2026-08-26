@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import os
@@ -43,6 +44,38 @@ LANGUAGE_COLORS = {
     "Go": "#00add8",
     "Kotlin": "#a97bff",
 }
+
+UNKNOWN_LANGUAGE_COLORS = (
+    "#f97316",  # orange
+    "#eab308",  # yellow
+    "#ef4444",  # red
+    "#06b6d4",  # cyan
+    "#ec4899",  # pink
+    "#14b8a6",  # teal
+    "#84cc16",  # lime
+    "#6366f1",  # indigo
+)
+
+
+def language_colors(items: list[tuple[str, int]]) -> dict[str, str]:
+    """Return stable, distinct colors for every language shown in the chart."""
+    colors: dict[str, str] = {}
+    used = set(LANGUAGE_COLORS.get(language) for language, _ in items if language in LANGUAGE_COLORS)
+    for language, _ in items:
+        if language in LANGUAGE_COLORS:
+            colors[language] = LANGUAGE_COLORS[language]
+            continue
+        seed = int(hashlib.sha256(language.encode("utf-8")).hexdigest()[:8], 16)
+        start = seed % len(UNKNOWN_LANGUAGE_COLORS)
+        for offset in range(len(UNKNOWN_LANGUAGE_COLORS)):
+            candidate = UNKNOWN_LANGUAGE_COLORS[(start + offset) % len(UNKNOWN_LANGUAGE_COLORS)]
+            if candidate not in used:
+                colors[language] = candidate
+                used.add(candidate)
+                break
+        else:
+            colors[language] = UNKNOWN_LANGUAGE_COLORS[start]
+    return colors
 
 
 def github_request(path: str, payload: dict | None = None) -> dict:
@@ -174,6 +207,7 @@ def generate_stats(repos: list[dict], contributions: dict) -> None:
 def generate_languages(repos: list[dict]) -> None:
     counts = Counter(repo.get("language") for repo in repos if repo.get("language"))
     items = counts.most_common(6)
+    colors = language_colors(items)
     total = max(sum(count for _, count in items), 1)
     center_x, center_y, radius = 175, 190, 92
     circumference = 2 * 3.141592653589793 * radius
@@ -187,7 +221,7 @@ def generate_languages(repos: list[dict]) -> None:
     offset = 0.0
     for index, (language, count) in enumerate(items):
         segment = circumference * count / total
-        color = LANGUAGE_COLORS.get(language, PALETTE["purple"])
+        color = colors[language]
         body.append(
             f'<circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="{color}" stroke-width="30" '
             f'stroke-linecap="round" stroke-dasharray="{max(segment - 5, 0):.2f} {circumference:.2f}" '
@@ -202,7 +236,7 @@ def generate_languages(repos: list[dict]) -> None:
     for index, (language, count) in enumerate(items):
         y = 108 + index * 31
         percent = count / total
-        color = LANGUAGE_COLORS.get(language, PALETTE["purple"])
+        color = colors[language]
         body.extend([
             f'<circle cx="360" cy="{y - 5}" r="6" fill="{color}"/>',
             text(378, y, language, 16, PALETTE["text"], "600"),

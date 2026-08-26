@@ -43,6 +43,14 @@ At **EXL Services**, I work with technologies including **GCP, CX Agent Studio, 
 
 > *“The intersection of psychology and technology is where I believe the most exciting innovations happen.”*
 
+## Agentic AI Runtime
+
+<div align="center">
+
+<img src="./assets/multi-agent-architecture.svg?v=agentic-1" alt="Live multi-agent architecture showing an orchestrator coordinating planning, research, tools, evaluation, and shared memory" width="100%" />
+
+</div>
+
 ## Current Focus
 
 <div align="center">
